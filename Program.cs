@@ -7,7 +7,15 @@ namespace ConsoleApp
     {
         static void Main(string[] args) 
         {
-            Console.WriteLine("Hello, World!");
+            if (args.Length == 1) 
+            {
+                Console.WriteLine($"Hello, {args[0]}");
+            }
+            else 
+            {
+                Console.WriteLine($"Hello, World");
+            }
+            
         }
     }
 }
